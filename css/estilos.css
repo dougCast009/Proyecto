@@ -16,3 +16,17 @@ html {
 .navegacion {
     background-color: #e68349;
 }
+
+.imagenIndex {
+    height: 280px;
+}
+
+
+/*Proyecto 1*/
+
+
+/**Grid**/
+
+.carta {
+    width: 18rem !important;
+}
