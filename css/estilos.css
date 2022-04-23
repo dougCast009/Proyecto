@@ -9,3 +9,10 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+
+/*Barra de navegacion*/
+
+.navegacion {
+    background-color: #e68349;
+}
