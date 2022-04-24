@@ -61,15 +61,11 @@
     <!-- Fin Header -->
     <!-- Inicio - Tabla de datos -->
     <section class="container mt-4">
-        <div class="table-wrapper">
+        <div class="table-wrapper table-responsive">
             <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row w-100">
+                    <div class="col-12 d-flex justify-content-center">
                         <h2 class="text-uppercase">Control de Usuarios</h2>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
-                        <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
                     </div>
                 </div>
             </div>
@@ -98,8 +94,8 @@
                         <td>douglascastillo087@gmail.com</td>
                         <td>8701-7135</td>
                         <td>
-                            <a class="edit"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-                            <a class="delete"><i class="fa-solid fa-trash" data-toggle="tooltip" title="Eliminar">&#xE254;</i></a>
+                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -114,8 +110,8 @@
                         <td>ckastillo@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -130,8 +126,8 @@
                         <td>angargar@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -146,8 +142,8 @@
                         <td>lourflobren@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -162,23 +158,28 @@
                         <td>fiopiedraflores@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
+            <div class="clearfix row">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
