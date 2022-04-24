@@ -260,3 +260,11 @@ table.table .avatar {
     box-shadow: none;
     background: #ddd;
 }
+
+
+/**Helpers**/
+
+.cuadro-helpers {
+    width: 200px;
+    height: 200px;
+}
