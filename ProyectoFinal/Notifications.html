@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Alerts</title>
+    <title>Notifications</title>
 </head>
 
 <body>
@@ -55,17 +55,27 @@
         </nav>
         <!-- Fin - Barra de Navegacion -->
         <div class="container text-center">
-            <h1>Ejemplo de Alerts con Bootstrap</h1>
-            <p>Componente de bootsrap que permite mostrar mensajes en base a cada uno de las acciones que se realicen dentro del sistema.</p>
+            <h1>Ejemplo de Badges y Spinners</h1>
+            <p>Componentes de bootsrap que permiten mostrar notificaciones de los distintos procesos que suceden en la pagina, algunos de estos se activan despues de una accion que se realice dentro de la pagina.</p>
         </div>
     </header>
     <!-- Fin Header -->
-    <!-- Inicio - Alerts -->
+    <!-- Inicio - Badges -->
     <section class="container mt-4 text-center">
-        <div id="mensaje"></div>
-        <button type="button" class="btn btn-primary" id="btnExito">Mostrar Alerta</button>
+        <h2 class="text-center mb-5">Badges y Spinners</h2>
+        <button type="button" class="btn btn-primary position-relative me-5 rounded-pill">
+            Mensajes sin Leer
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              5
+              <span class="visually-hidden">Mensajes sin Leer</span>
+            </span>
+        </button>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+         </button>
     </section>
-    <!-- Fin - Alerts -->
+    <!-- Fin - Badges -->
     <!-- Javascript -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
