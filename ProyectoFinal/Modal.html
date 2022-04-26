@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Grid - Breakpoints</title>
+    <title>Modal</title>
 </head>
 
 <body>
@@ -56,6 +56,8 @@
         <!-- Fin - Barra de Navegacion -->
         <div class="container text-center">
             <h1>Ejemplo de Tables con Bootstrap</h1>
+            <p>Componente que suele aparecer generalmente despues de accionar un boton o un link el cual va a abrir un elemento que aparecera en la pantalla por encima de los demas elementos en la pagina</p>
+            <p class="text-danger">Para mostrar un modal por favor hacer click en el boton de editar en acciones</p>
         </div>
     </header>
     <!-- Fin Header -->
@@ -94,8 +96,7 @@
                         <td>douglascastillo087@gmail.com</td>
                         <td>8701-7135</td>
                         <td>
-                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#" class="edit me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -110,8 +111,7 @@
                         <td>ckastillo@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#" class="edit me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -126,8 +126,7 @@
                         <td>angargar@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#" class="edit me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -142,8 +141,7 @@
                         <td>lourflobren@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#" class="edit me-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -158,8 +156,7 @@
                         <td>fiopiedraflores@gmail.com</td>
                         <td>8888-8888</td>
                         <td>
-                            <a href="#" class="edit me-3"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#" class="edit me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
                 </tbody>
@@ -179,9 +176,42 @@
                         <li class="page-item"><a href="#" class="page-link">Next</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
+        <!-- Modal Editar -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body form row">
+                        <div class="col-12 mb-3">
+                            <label for="Cedula" class="form-label">Cedula:</label>
+                            <input placeholder="Ingrese su numero de cedula" type="number" class="form-control" id="Cedula">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="Nombre" class="form-label">Nombre:</label>
+                            <input placeholder="Ingrese su nombre completo" type="text" class="form-control" id="Nombre">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="Correo" class="form-label">Correo:</label>
+                            <input placeholder="Ingrese su correo electronico" type="email" class="form-control" id="Correo">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="telefono" class="form-label">Telefono:</label>
+                            <input placeholder="Ingrese su numero de telefono" type="number" class="form-control" id="telefono">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Regresar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Modal Editar -->
     </section>
     <!-- Fin - Tabla de datos -->
     <!-- Javascript -->
