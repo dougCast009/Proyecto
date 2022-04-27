@@ -11,14 +11,27 @@ html {
 }
 
 
-/*Barra de navegacion*/
+/*Generales*/
 
-.navegacion {
-    background-color: #e68349;
+p {
+    font-size: 1.2rem;
 }
+
+
+/*Barra de navegacion*/
 
 .imagenIndex {
     height: 280px;
+}
+
+.barraLink {
+    font-size: 1rem;
+    color: white !important;
+    margin-right: 5rem;
+}
+
+.barraLink:hover {
+    color: rgb(235, 176, 75) !important;
 }
 
 
@@ -267,4 +280,13 @@ table.table .avatar {
 .cuadro-helpers {
     width: 200px;
     height: 200px;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: auto !important;
+    margin: auto;
 }
