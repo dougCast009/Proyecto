@@ -292,5 +292,5 @@ table.table .avatar {
 /*Footer*/
 
 footer {
-    margin-top: auto;
+    margin-top: auto !important;
 }
