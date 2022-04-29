@@ -13,6 +13,12 @@ html {
 
 /*Generales*/
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 p {
     font-size: 1.2rem;
 }
@@ -286,7 +292,5 @@ table.table .avatar {
 /*Footer*/
 
 footer {
-    width: 100%;
-    height: auto !important;
-    margin: auto;
+    margin-top: auto;
 }
